@@ -22,7 +22,7 @@ const Definition = () => {
     return (
         <section className='relative w-full h-max overflow-hidden'>
             <div
-                className='w-full h-full bg-[#13171D] bg-opacity-60 relative z-50 overflow-scroll md:overflow-hidden justify-between py-[80px]'>
+                className='w-full h-full bg-black xl:bg-[#13171D] xl:bg-opacity-60 relative z-50 overflow-scroll md:overflow-hidden justify-between py-[80px]'>
                 <div className='max-w-[1920px] px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] mx-auto'>
                     <div
                         className='flex flex-row md:flex-col w-max md:w-full md:max-w-full gap-x-[15px] gap-y-[20px]'>
@@ -31,7 +31,9 @@ const Definition = () => {
                 </div>
 
             </div>
-            <BackgroundVideo/>
+            <div className='hidden xl:block'>
+                <BackgroundVideo/>
+            </div>
         </section>
     )
 }
