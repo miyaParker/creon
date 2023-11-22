@@ -1,27 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.overlay {
+    background: linear-gradient(175deg, #AB23FF 4.29%, #3D8BFF 47.39%, #000000 95.05%);
+    mix-blend-mode: soft-light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.video-overlay {
+    background: linear-gradient(175deg, rgba(61, 139, 255, 0.44) 4.29%, #AB23FF 95.71%);
+    mix-blend-mode: soft-light;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ellipse{
+    border-radius: 1106px;
+    background:  #000;
+    filter: blur(18px);
+    width: 773px;
+    height: 65px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.gradient-text {
+    background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-bg{
+    background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+}
+.gradient-border {
+    border-top: 1px solid #3D8BFF;
+    border-bottom: 1px solid #3D8BFF;
+}
+
+.flip-horizontal {
+    transform: scaleY(-1);
+    transition: transform 300ms ease-out;
+}
+.bg-blur{
+    background: rgba(13, 19, 28, 0.70);
+    backdrop-filter: blur(5px);
 }
