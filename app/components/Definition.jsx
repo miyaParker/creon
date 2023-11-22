@@ -1,4 +1,5 @@
 import DefinitionCard from "./DefinitionCard";
+import BackgroundVideo from "./BackgroundVideo";
 
 const Definition = () => {
     const cards = [
@@ -19,13 +20,18 @@ const Definition = () => {
         },
     ]
     return (
-        <section
-            className='w-full overflow-scroll md:overflow-hidden justify-between bg-black py-[76px]'>
-            <div className='max-w-[1920px] px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px]  mx-auto'>
-                <div className='flex flex-row md:flex-col bg-black w-max md:w-full md:max-w-full gap-x-[15px] gap-y-[20px]'>
-                    {cards.map((card, index) => <DefinitionCard card={card} key={index}/>)}
+        <section className='relative w-full h-max overflow-hidden'>
+            <div
+                className='w-full h-full bg-[#13171D] bg-opacity-60 relative z-50 overflow-scroll md:overflow-hidden justify-between py-[80px]'>
+                <div className='max-w-[1920px] px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] mx-auto'>
+                    <div
+                        className='flex flex-row md:flex-col w-max md:w-full md:max-w-full gap-x-[15px] gap-y-[20px]'>
+                        {cards.map((card, index) => <DefinitionCard card={card} key={index}/>)}
+                    </div>
                 </div>
+
             </div>
+            <BackgroundVideo/>
         </section>
     )
 }

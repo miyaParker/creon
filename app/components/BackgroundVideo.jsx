@@ -1,13 +1,13 @@
 const BackgroundVideo=()=>{
     return(
         <div
-            className='absolute bottom-0 left-0 md:left-[93px] flex-shrink-0 mt-[30px] w-full h-[485px] overflow-hidden'>
-            <div className="ellipse absolute top-[-32px]"></div>
-            <div className="video-overlay"></div>
-            <video className=' object-cover w-full h-full' autoPlay muted>
+            className='absolute z-10 bottom-0 left-0 w-full h-full'>
+            <div className="bg-gradient z-10 "></div>
+            <div className="z-20  black-gradient"></div>
+            <div className="z-20 black-gradient"></div>
+            <video className='object-cover w-full h-full' autoPlay muted>
                 <source src="/bg-video.mp4" type="video/mp4"/>
             </video>
-            <div className="ellipse absolute bottom-[-32px]"></div>
         </div>
     )
 }

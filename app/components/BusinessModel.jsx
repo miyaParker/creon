@@ -10,16 +10,16 @@ const BusinessModel = () => {
                 <span className='block'>Profiting Through</span><span
                 className='block mt-[10px] xl:mt-[20px] text-[22px] md:text-[28px] xl:text-[38px] leading-[120%] block text-right gradient-text'>AI Innovation & Decentralization</span>
             </h2>
-            <div className='mx-auto flex flex-col lg:flex-row 2xl:items-center gap-x-[45px]'>
+            <div className='mx-auto flex flex-col lg:flex-row lg:items-center gap-x-[45px]'>
                 <div
-                    className='relative flex-shrink-0 mt-[30px] max-w-full w-full overflow-hidden h-[176px] md:h-[366px] lg:w-[636px] lg:h-[493px] lg:w-[947px] lg:h-[485px] mb-[18px] overflow-hidden'>
+                    className='relative flex-shrink-0 mt-[30px] max-w-full w-full overflow-hidden h-[176px] md:h-[366px] lg:w-[636px] lg:h-[493px] xl:w-[947px] lg:h-[485px] mb-[18px] overflow-hidden'>
                     <video className='z-[-10] w-full h-full object-cover' autoPlay muted>
                         <source src="/bm-video.mp4" type="video/mp4"/>
                     </video>
                     <div className='overlay w-full z-20 h-full absolute top-0'></div>
                 </div>
 
-                <div className='lg:max-w-[291px] py-[20px] mt-[51px] border-y 2xl:border-y-0 2xl:border-x 2xl:px-[20px] border-[#13171D]'>
+                <div className='h-max lg:max-w-[291px] py-[20px] mt-[51px] border-y 2xl:border-y-0 2xl:border-x 2xl:px-[20px] border-[#13171D]'>
                     <h3 className=' font-satoshi font-bold w-full text-[18px] text-white leading-[130%] pb-[15px] md:pb-[20px]'>A
                         Dynamic Business Model for Sustainable Growth and Community Engagement</h3>
                     <p className={`font-satoshi w-full text-[16px] text-white leading-[130%] pb-[30px] `}>
