@@ -47,7 +47,7 @@ const CreonPass = () => {
                         </div>
 
                         <div
-                            className='hidden xl:flex md:absolute md:left-[30px] xl:left-[120px] 2xl:left-[240px] flex flex-col gap-y-[20px]'>
+                            className='hidden xl:flex md:absolute md:left-[30px] xl:left-[120px] 2xl:left-[240px] flex flex-col gap-y-[10px]'>
                             <p className={`px-[18px] py-[16px] border border-[#13171D] rounded-[6px] font-satoshi w-max text-[16px] text-white leading-[130%]`}>
                                 Pre-launch investment opportunities for upcoming AI projects</p>
                             <p className={`px-[18px] py-[16px] border border-[#13171D] rounded-[6px] font-satoshi w-max text-[16px] text-white leading-[130%]`}>
