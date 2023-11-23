@@ -1,28 +1,8 @@
 import Image from "next/image";
+import {menuItems} from "../constants";
 
-const MobileMenu=({toggleMenu})=>{
-    const menuItems = [{
-        title: 'Creon Pass',
-        link: '',
-        comingSoon: false
-    },
-        {
-            title: 'Token',
-            link: '',
-            comingSoon: true
-        },
-        {
-            title: 'AI Income',
-            link: '',
-            comingSoon: true
-        },
-        {
-            title: 'AI Launchpad',
-            link: '',
-            comingSoon: true
-        }
-    ]
-    return(
+const MobileMenu = ({toggleMenu}) => {
+    return (
         <div className='xl:hidden z-50 w-full fixed top-0 left-0 h-screen right-0 flex'>
             <div className='flex-1 h-full bg-blur pt-[24px]'>
             </div>

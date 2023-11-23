@@ -1,11 +1,11 @@
+'use client'
 import Image from "next/image";
 import {useState} from "react";
 
 const DropdownItem = ({
-                     data,
-                     setShow, index, currentIndex
-                 }) => {
-    const [visible, setVisible] = useState(index===1)
+                          data, index
+                      }) => {
+    const [visible, setVisible] = useState(index === 1)
     return (
         <div onClick={() => setVisible(!visible)}
              className={`${index === 1 ? '' : 'pt-[20px]'} relative pb-[20px] border-b border-[#13171D] cursor-pointer`}>

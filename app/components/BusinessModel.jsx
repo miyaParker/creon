@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const BusinessModel = () => {
     return (
         <section className='bg-black w-full'>
