@@ -9,7 +9,6 @@ const ProductCard = ({card}) => {
             <p className={`ml-[20px] gradient-text font-bold text-[18px] text-white font-satoshi leading-[130%] mb-[20px] max-w-[252px] `}>{card.subheading}</p>
 
             <div className='w-full h-[234px] relative left-[0px] mb-[18px] overflow-hidden'>
-                {card.image}
                 <Image
                     src={card.image}
                     alt='read more' width={272}
