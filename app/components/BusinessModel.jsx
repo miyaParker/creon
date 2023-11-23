@@ -4,7 +4,7 @@ const BusinessModel = () => {
     return (
         <section className='bg-black w-full'>
         <div
-            className={`max-w-[1920px] mx-auto px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] pt-[80px] `}>
+            className={`w-full max-w-[1920px] mx-auto px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] pt-[80px] `}>
 
             <h2 className={`text-[32px] md:text-[44px] xl:text-[68px] max-w-[345px] md:max-w-full text-white font-monument uppercase leading-[110%] mb-[10px]`}>
                 <span className='block'>Profiting Through</span><span

@@ -6,7 +6,7 @@ const Hero = () => {
                     <source src="/video-lg.mp4" type="video/mp4"/>
                 </video>
                 <div className='overlay w-full z-20 h-full absolute top-0'></div>
-            <div className='max-w-[1920px] px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px]'>
+            <div className='w-full max-w-[1920px] px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px]'>
                 <div className='block xl:hidden absolute bottom-[60px] text-white '>
                     <p className='w-full max-w-[345px] md:max-w-[465px] xl:max-w-[964px] font-monument text-[32px] md:text-[44px] lg:text-[44px] uppercase leading-[110%] mb-[20px]'>Empowering
                         AI-Crypto Innovations and Integrating AI Tools into crypto.</p>

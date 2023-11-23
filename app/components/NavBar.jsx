@@ -34,7 +34,7 @@ const NavBar = () => {
             <nav
                 className='w-full absolute z-50 bg-transparent pt-[20px] xl:pt-[30px] '>
                 <div
-                    className='flex px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] justify-between items-center  max-w-[1920px] mx-auto'>
+                    className='flex px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] justify-between items-center w-full max-w-[1920px] mx-auto'>
                     <Image src='/logo.svg' width={120} height={33}/>
                     <ul className='flex items-center gap-x-[15px] xl:gap-x-[40px] font-satoshi'>
                         {menuItems.map((menuItem, index) => <li key={`menu-${index}`} className='hidden xl:flex items-start gap-x-[4px]'>

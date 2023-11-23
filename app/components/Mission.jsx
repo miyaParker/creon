@@ -6,7 +6,7 @@ const Mission = () => {
         <section
             className='h-max md:h-[1024px] lg:h-[768px] xl:h-[872px] 2xl:h-[972px] w-full relative bg-black overflow-hidden pt-[80px] md:pb-[98px] lg:pb-[75px] '>
             <div
-                className='px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] max-w-[1920px] mx-auto flex flex-col justify-between items-start lg:flex-row lg:items-start'>
+                className='px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] w-full max-w-[1920px] mx-auto flex flex-col justify-between items-start lg:flex-row lg:items-start'>
                 <div className='lg:relative md:mb-[40px]'>
                     <h2 className='xl:hidden relative z-20 font-monument  text-[22px] md:text-[26px] lg:text-[28px] uppercase text-white leading-[120%] md:max-w-max lg:max-w-[365px] xl:max-w-[699px]'>our
                         mission is

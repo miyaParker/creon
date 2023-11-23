@@ -2,7 +2,7 @@ const CreonPass = () => {
     return (
         <div className='bg-black w-full'>
             <div
-                className={`xl:flex justify-between max-w-[1920px] mx-auto px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] pt-[80px] `}>
+                className={`xl:flex justify-between w-full max-w-[1920px] mx-auto px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] pt-[80px] `}>
                 <div>
                     <h2 className={`text-[32px] md:text-[44px] xl:text-[68px] max-w-[345px] md:max-w-full text-white font-monument uppercase leading-[110%] mb-[10px] md: mb-[41px]`}>
                         creon pass nft
@@ -47,7 +47,7 @@ const CreonPass = () => {
                         </div>
 
                         <div
-                            className='hidden xl:block md:absolute md:left-[30px] xl:left-[120px] 2xl:left-[240px] flex flex-col gap-y-[20px]'>
+                            className='hidden xl:flex md:absolute md:left-[30px] xl:left-[120px] 2xl:left-[240px] flex flex-col gap-y-[20px]'>
                             <p className={`px-[18px] py-[16px] border border-[#13171D] rounded-[6px] font-satoshi w-max text-[16px] text-white leading-[130%]`}>
                                 Pre-launch investment opportunities for upcoming AI projects</p>
                             <p className={`px-[18px] py-[16px] border border-[#13171D] rounded-[6px] font-satoshi w-max text-[16px] text-white leading-[130%]`}>
