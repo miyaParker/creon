@@ -2,7 +2,7 @@ const BusinessModel = () => {
     return (
         <section className='bg-black w-full'>
         <div
-            className={`w-full max-w-[1920px] mx-auto px-[15px] md:px-[30px] min-[1280px]:px-[160px] xl:px-[180px] 2xl:px-[240px] pt-[80px] `}>
+            className={`w-full max-w-[1920px] mx-auto px-[15px] md:px-[30px] xl:px-[180px] 2xl:px-[240px] pt-[80px]`}>
 
             <h2 className={`text-[32px] md:text-[44px] xl:text-[68px] max-w-[345px] md:max-w-full text-white font-monument uppercase leading-[110%] mb-[10px]`}>
                 <span className='block'>Profiting Through</span><span
@@ -10,7 +10,7 @@ const BusinessModel = () => {
             </h2>
             <div className='mx-auto flex flex-col lg:flex-row lg:items-center gap-x-[45px]'>
                 <div
-                    className='relative flex-shrink-0 mt-[30px] w-full lg:w-[70%] overflow-hidden mb-[18px] overflow-hidden'>
+                    className='relative flex-shrink-0 mt-[30px] w-full lg:w-[70%] overflow-hidden h-[176px] md:h-[366px] lg:w-[636px] lg:h-[493px] 2xl:w-[947px] lg:h-[485px] mb-[18px] overflow-hidden'>
                     <video className='z-[-10] w-full h-full object-cover' autoPlay muted>
                         <source src="/bm-video.mp4" type="video/mp4"/>
                     </video>
