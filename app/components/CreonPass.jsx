@@ -23,7 +23,7 @@ const CreonPass = () => {
                                 <source src="/creon-pass.mp4" type="video/mp4"/>
                             </video>
                             <div className="ellipse"></div>
-                        </div>`1```
+                        </div>
                     </div>
                     <div className='flex flex-col gap-x-[45px] overflow-hidden'>
                         <div className='relative z-40'>
