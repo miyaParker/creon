@@ -62,22 +62,22 @@ const CreonPass = () => {
                 <div
                     className='hidden min-[860px]:block flex-1 xl:hidden h-max relative z-40 top-0 mb-[18px] overflow-hidden'>
                     <div className='min-[860px]:w-[580px] w-[693px] relative  mt-[80px]'>
-                        <div className="ellipse top-[-33px]"></div>
+                        <div className="ellipse"></div>
                         <div className="video-overlay"></div>
                         <video className='object-cover relative w-full h-max' autoPlay muted>
                             <source src="/creon-pass.mp4" type="video/mp4"/>
                         </video>
-                        <div className="ellipse bottom-[-33px]"></div>
+                        <div className="ellipse"></div>
                     </div>
                 </div>
                 <div
                     className='hidden xl:block relative flex-1 flex-shrink-0 mt-[30px] w-full h-full md:w-[694px] mb-[18px] overflow-hidden'>
-                    <div className="ellipse absolute top-[-32px]"></div>
+                    <div className="ellipse absolute"></div>
                     <div className="video-overlay"></div>
                     <video className=' object-cover w-full h-full' autoPlay muted>
                         <source src="/creon-pass.mp4" type="video/mp4"/>
                     </video>
-                    <div className="ellipse absolute bottom-[-32px]"></div>
+                    <div className="ellipse absolute"></div>
                 </div>
 
             </div>
