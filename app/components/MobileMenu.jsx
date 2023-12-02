@@ -6,7 +6,7 @@ const MobileMenu = () => {
     return (
         <div className='w-screen screen-h fixed bottom-0 left-0'>
             <motion.div initial={{x: 208}} animate={{x: 0}} exit={{x: 208}} transition={{type: 'tween', ease:'easeOut', duration:0.25}}
-                        className='screen-h top-0 absolute z-50 right-0 w-[208px] bg-black h-full pt-[88px] pl-[30px]'>
+                        className='screen-h top-0 absolute z-[150] right-0 w-[208px] bg-black h-full pt-[88px] pl-[30px]'>
                 <motion.ul className='flex flex-col text-white z-[390] relative'>
                     {menuItems.map((menuItem, index) => <li
                         className='py-[15px] border-y border-[#13171D] flex items-start gap-x-[4px]'>
