@@ -36,13 +36,13 @@ const NavBar = () => {
                         </a></li>
                         <li className='xl:hidden flex items-center'>
                             <motion.div onClick={toggleMenu}
-                                        className={`cursor-pointer w-[38px] gap-[5px] h-[38px] rounded-[6px] flex flex-col items-center justify-center ${menuVisible ? 'bg-[#3D8BFF] duration-300 ease-out' : 'bg-white'}`}>
+                                        className={`cursor-pointer w-[38px] gap-[5px] h-[38px] rounded-[6px] flex flex-col items-center justify-center duration-300 ease-out ${menuVisible ? 'bg-[#3D8BFF]' : 'bg-white'}`}>
                                 <motion.span
-                                    className={`w-[20px] h-[2px] block ${menuVisible ?'bg-white duration-300 ease-out rotate-[45deg] translate-y-[3.5px] translate-x-[1px]': 'bg-black  '}`}></motion.span>
+                                    className={`w-[20px] h-[2px] block duration-300 ease-out ${menuVisible ?'bg-white rotate-[45deg] translate-y-[3.5px] translate-x-[1px]': 'bg-black'}`}></motion.span>
                                 <motion.span
-                                    className={`w-[20px] h-[2px] block ${menuVisible ?'bg-white duration-300 ease-out rotate-[-45deg] opacity-0 hidden': 'bg-black '}`}></motion.span>
+                                    className={`w-[20px] h-[2px] block duration-300 ease-out ${menuVisible ?'bg-white ease-out rotate-[-45deg] opacity-0 hidden': 'bg-black '}`}></motion.span>
                                 <motion.span
-                                    className={`w-[20px] h-[2px] block ${menuVisible ?'bg-white duration-300 ease-out rotate-[-45deg] translate-y-[-3.5px] translate-x-[1px]': 'bg-black '}`}></motion.span>
+                                    className={`w-[20px] h-[2px] block duration-300 ease-out ${menuVisible ?'bg-white ease-out rotate-[-45deg] translate-y-[-3.5px] translate-x-[1px]': 'bg-black '}`}></motion.span>
                             </motion.div>
                         </li>
                     </ul>
