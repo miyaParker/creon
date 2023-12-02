@@ -31,7 +31,7 @@ const NavBar = () => {
                         </li>)}
                         <li><a href="#">
                             <button
-                                className='font-satoshi font-bold text-center text-base text-white leading-[110%] px-[23px] pt-[9px] pb-[11px] rounded-[6px] border border-[2px] flex items-center'>Connect
+                                className='hover:bg-[#3D8BFF] hover:border-transparent duration-300 ease-out font-satoshi font-bold text-center text-base text-white leading-[110%] px-[23px] pt-[9px] pb-[11px] rounded-[6px] border border-[2px] flex items-center'>Connect
                             </button>
                         </a></li>
                         <li className='xl:hidden flex items-center'>
