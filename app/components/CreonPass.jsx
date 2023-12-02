@@ -15,14 +15,14 @@ const CreonPass = () => {
                         The Creon NFT pass unlocks access to AI projects, the Creon launchpad, and a ticket to generate
                         passive income through AI-driven tools</h3>
                     <div
-                        className='min-[860px]:hidden mx-auto h-[484px] md:h-[694px] relative block md:absolute z-40 lg:top-0 flex-shrink-0 mt-[30px] right-0 mb-[18px] overflow-hidden'>
-                        <div className='w-full  mx-auto relative md:right-[-201px] lg:right-[-104px]'>
-                            <div className="ellipse top-[-33px]"></div>
+                        className='min-[860px]:hidden mx-auto w-auto h-[400px] max-h-[400px] md:w-[694px] md:h-[694px] relative block md:absolute z-40 lg:top-0 flex-shrink-0 mt-[30px] right-0 mb-[18px] overflow-hidden'>
+                        <div className='w-full mx-auto relative md:right-[-201px] overflow-visible'>
+                            <div className="ellipse top-[-32px] z-50"></div>
                             <div className="video-overlay"></div>
-                            <video className='object-cover relative w-full h-max' autoPlay muted>
+                            <video className='object-cover relative w-full h-full' autoPlay muted>
                                 <source src="/creon-pass.mp4" type="video/mp4"/>
                             </video>
-                            <div className="ellipse bottom-[-33px]"></div>
+                            <div className="ellipse bottom-[-32px]"></div>
                         </div>
                     </div>
                     <div className='flex flex-col gap-x-[45px] overflow-hidden'>
