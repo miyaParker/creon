@@ -95,6 +95,8 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-100%);
 }
 .btn:hover{
-
     background: #3D8BFF;
+}
+.screen-h{
+    height: 100dvh;
 }

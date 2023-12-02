@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <main className='h-screen max-h-[812px] w-full relative'>
+        <main className='screen-h max-h-[812px] w-full relative'>
                 <video className='z-[-10] w-full h-full object-cover' autoPlay muted>
                     <source src="/video-lg.mp4" type="video/mp4"/>
                 </video>

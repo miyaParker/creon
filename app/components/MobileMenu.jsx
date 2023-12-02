@@ -4,9 +4,9 @@ import {motion} from "framer-motion";
 
 const MobileMenu = () => {
     return (
-        <div className='w-screen h-screen fixed bottom-0 left-0'>
+        <div className='w-screen screen-h fixed bottom-0 left-0'>
             <motion.div initial={{x: 208}} animate={{x: 0}} exit={{x: 208}} transition={{type: 'tween', ease:'easeOut', duration:0.25}}
-                        className='h-screen top-0 absolute z-50 right-0 w-[208px] bg-black h-full pt-[88px] pl-[30px]'>
+                        className='screen-h top-0 absolute z-50 right-0 w-[208px] bg-black h-full pt-[88px] pl-[30px]'>
                 <motion.ul className='flex flex-col text-white z-[390] relative'>
                     {menuItems.map((menuItem, index) => <li
                         className='py-[15px] border-y border-[#13171D] flex items-start gap-x-[4px]'>
@@ -35,7 +35,7 @@ const MobileMenu = () => {
                 </div>
             </motion.div>
             <motion.div initial={{backdropFilter: 'none'}} animate={{backdropFilter: 'blur(5px)'}} exit={{backdropFilter: 'none'}}
-                        className='absolute top-0 left-0 h-screen w-screen bg-transparent '></motion.div>
+                        className='absolute top-0 left-0 screen-h w-screen bg-transparent '></motion.div>
         </div>
     )
 }
