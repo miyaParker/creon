@@ -34,7 +34,7 @@ const MobileMenu = () => {
                         </div>
                 </div>
             </motion.div>
-            <motion.div initial={{backdropFilter: 'none'}} animate={{backdropFilter: 'blur(5px)'}} exit={{backdropFilter: 'none'}}
+            <motion.div initial={{backdropFilter: 'none'}} animate={{backdropFilter: 'blur(5px) contrast(100%)'}} exit={{backdropFilter: 'none'}}
                         className='absolute top-0 left-0  z-50  h-full w-screen bg-transparent '></motion.div>
         </div>
     )
