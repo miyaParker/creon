@@ -10,21 +10,11 @@ export default function Home() {
     return (
         <>
             <Hero/>
-            <section className='hidden xl:block'>
-                <CreonPass/>
-                <BusinessModel/>
-            </section>
             <Mission/>
-            <section className='hidden xl:block'>
-                <Products/>
-                <Definition/>
-            </section>
-            <section className='xl:hidden'>
-                <BusinessModel/>
-                <Definition/>
-                <CreonPass/>
-                <Products/>
-            </section>
+            <BusinessModel/>
+            <Definition/>
+            <CreonPass/>
+            <Products/>
             <Footer/>
         </>
 

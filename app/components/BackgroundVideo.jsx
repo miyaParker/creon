@@ -5,7 +5,7 @@ const BackgroundVideo=()=>{
             <div className="bg-gradient z-10 "></div>
             <div className="z-20  black-gradient"></div>
             <div className="z-20 black-gradient"></div>
-            <video className='object-cover w-full absolute bottom-0' autoPlay muted>
+            <video className='object-cover w-full h-full absolute bottom-0' autoPlay muted>
                 <source src="/bg-video.mp4" type="video/mp4"/>
             </video>
         </div>

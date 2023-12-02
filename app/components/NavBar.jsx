@@ -3,6 +3,7 @@ import Image from "next/image";
 import {useState} from "react";
 import MobileMenu from "./MobileMenu";
 import {menuItems} from "../constants";
+import {motion, AnimatePresence} from "framer-motion";
 
 const NavBar = () => {
 
@@ -15,13 +16,13 @@ const NavBar = () => {
             <nav
                 className='w-full absolute z-50 bg-transparent pt-[20px] xl:pt-[30px] '>
                 <div
-                    className='flex px-[15px] md:px-[30px] xl:px-[120px] 2xl:px-[240px] justify-between items-center w-full max-w-[1920px] mx-auto'>
-                    <Image src='/logo.svg' width={120} height={33}/>
-                    <ul className='flex items-center gap-x-[15px] xl:gap-x-[40px] font-satoshi'>
+                    className='flex px-[15px] md:px-[30px] min-[1280px]:px-[160px] xl:px-[180px] 2xl:px-[240px] justify-between items-center w-full max-w-[1920px] mx-auto'>
+                    <Image src='/logo.svg' width={120} height={33} className='relative z-[120]'/>
+                    <ul className='flex items-center gap-x-[15px] xl:gap-x-[40px] font-satoshi relative z-[120]'>
                         {menuItems.map((menuItem, index) => <li key={`menu-${index}`}
                                                                 className='hidden xl:flex items-start gap-x-[4px]'>
                             <a
-                                className='relative font-bold text-white text-[18px] leading-[110%]'
+                                className={`relative font-bold text-white text-[18px] leading-[110%] ${menuItem.comingSoon ? 'cursor-default' : 'cursor-pointer hover:text-[#3D8BFF] duration-200 delay-50 ease-linear'}`}
                                 href={menuItem.link}>
                                 {menuItem.title}
                             </a>
@@ -34,16 +35,23 @@ const NavBar = () => {
                             </button>
                         </a></li>
                         <li className='xl:hidden flex items-center'>
-                            <button onClick={toggleMenu}><Image src='/menu.svg' width={38} height={38}/></button>
+                            <motion.div onClick={toggleMenu}
+                                        className={`w-[38px] gap-[5px] h-[38px] rounded-[6px] flex flex-col items-center justify-center ${menuVisible ? 'bg-[#3D8BFF] duration-300 ease-out' : 'bg-white'}`}>
+                                <motion.span
+                                    className={`w-[20px] h-[2px] block ${menuVisible ?'bg-white duration-300 ease-out rotate-[45deg] translate-y-[3.5px] translate-x-[1px]': 'bg-black  '}`}></motion.span>
+                                <motion.span
+                                    className={`w-[20px] h-[2px] block ${menuVisible ?'bg-white duration-300 ease-out rotate-[-45deg] opacity-0 hidden': 'bg-black '}`}></motion.span>
+                                <motion.span
+                                    className={`w-[20px] h-[2px] block ${menuVisible ?'bg-white duration-300 ease-out rotate-[-45deg] translate-y-[-3.5px] translate-x-[1px]': 'bg-black '}`}></motion.span>
+                            </motion.div>
                         </li>
                     </ul>
                     {/*Mobile menu*/}
-                    {menuVisible ?
-                        <MobileMenu toggleMenu={toggleMenu}/> : null}
+                    <AnimatePresence>
+                        {menuVisible ? <MobileMenu toggleMenu={toggleMenu}/> : null}
+                    </AnimatePresence>
                 </div>
             </nav>
-
-
         </>
     )
 }

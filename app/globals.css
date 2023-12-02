@@ -1,6 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #AB23FF black;
+}
+
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #AB23FF;
+}
 .overlay {
     background: linear-gradient(175deg, #AB23FF 4.29%, #3D8BFF 47.39%, #000000 95.05%);
     mix-blend-mode: soft-light;
@@ -17,6 +34,8 @@
     height: 100%;
 }
 .ellipse{
+    z-index: 20;
+    position: absolute;
     border-radius: 1106px;
     background:  #000;
     filter: blur(18px);
@@ -34,8 +53,10 @@
     background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
 }
 .gradient-border {
-    border-top: 1px solid #3D8BFF;
-    border-bottom: 1px solid #3D8BFF;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+    border-image-slice: 1;
 }
 
 .flip-horizontal {
@@ -64,6 +85,16 @@
     mix-blend-mode: soft-light;
 }
 .card-container:hover img{
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: transform 200ms ease-in 10ms;
+}
+.btn:hover .btn-child{
+    transform: translateY(-100%);
+}
+.btn:hover .btn-child-2{
+    transform: translateY(-100%);
+}
+.btn:hover{
+
+    background: #3D8BFF;
 }
