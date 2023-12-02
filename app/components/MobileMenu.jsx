@@ -2,7 +2,7 @@ import Image from "next/image";
 import {menuItems} from "../constants";
 import {motion} from "framer-motion";
 
-const MobileMenu = ({toggleMenu}) => {
+const MobileMenu = () => {
     return (
         <div className='w-screen h-screen fixed bottom-0 left-0'>
             <motion.div initial={{x: 208}} animate={{x: 0}} exit={{x: 208}} transition={{type: 'tween', ease:'easeOut', duration:0.25}}
@@ -34,8 +34,8 @@ const MobileMenu = ({toggleMenu}) => {
                         </div>
                 </div>
             </motion.div>
-            <motion.div initial={{opacity: 0}} animate={{opacity: 0.4}} exit={{opacity: 0}}
-                        className='absolute top-0 left-0 h-screen w-screen bg-black '></motion.div>
+            <motion.div initial={{backdropFilter: 'none'}} animate={{backdropFilter: 'blur(5px)'}} exit={{backdropFilter: 'none'}}
+                        className='absolute top-0 left-0 h-screen w-screen bg-transparent '></motion.div>
         </div>
     )
 }
