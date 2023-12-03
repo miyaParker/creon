@@ -9,15 +9,15 @@ const Footer = () => {
                     <p className='text-[14px] lg:text-[16px] leading-[130%]'>© Creon 2023. All rights reserved.</p>
                     <div className='flex gap-x-[10px] items-center'>
                         <div
-                            className='w-[34px] h-[34px] rounded-full border border-2 border-white flex  items-center justify-center hover:bg-[#3D8BFF] hover:border-transparent duration-200 ease-in cursor-pointer'>
+                            className='w-[34px] h-[34px] rounded-full border border-2 border-white flex  items-center justify-center hover:bg-[#3D8BFF] hover:border-transparent duration-[250ms] ease-out cursor-pointer'>
                             <a href="#"><Image src='/telegram.svg' width={16} height={16}/></a>
                         </div>
                         <div
-                            className='w-[34px] h-[34px] rounded-full border border-2 border-white flex  items-center justify-center hover:bg-[#3D8BFF] hover:border-transparent duration-200 ease-in cursor-pointer'>
+                            className='w-[34px] h-[34px] rounded-full border border-2 border-white flex  items-center justify-center hover:bg-[#3D8BFF] hover:border-transparent duration-[250ms] ease-out cursor-pointer'>
                             <a href="#"><Image src='/discord.svg' width={16} height={16}/></a>
                         </div>
                         <div
-                            className='w-[34px] h-[34px] rounded-full border border-2 border-white flex  items-center justify-center hover:bg-[#3D8BFF] hover:border-transparent duration-200 ease-in cursor-pointer'>
+                            className='w-[34px] h-[34px] rounded-full border border-2 border-white flex  items-center justify-center hover:bg-[#3D8BFF] hover:border-transparent duration-[250ms] ease-out cursor-pointer'>
                             <a href="#"><Image src='/twitter.svg' width={16} height={16}/></a>
                         </div>
                     </div>
