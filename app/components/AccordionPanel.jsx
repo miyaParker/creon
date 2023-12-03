@@ -13,7 +13,7 @@ const AccordionPanel = ({
         }}
              className={`${index === 1 ? '' : 'pt-[20px]'} relative pb-[20px] border-b border-[#13171D] cursor-pointer`}>
             <div className='flex gap-[20px] items-center'>
-                <div className='w-[70px] lg:w-[110px]'>{data.icon(panel, index)}</div>
+                <div className='w-[73px] lg:w-[100px]'>{data.icon(panel, index)}</div>
                 <div className='flex flex-1 justify-between items-start'>
                     <p className={`font-bold text-[20px] max-w-[196px] sm:max-w-[323px] text-white font-satoshi md:text-[20px] lg:text-[22px] leading-[130%]  ${panel === index ? '' : 'hover:text-[#3D8BFF] duration-200 delay-50 ease-linear'}`}>{data.q}</p>
                     <Image
