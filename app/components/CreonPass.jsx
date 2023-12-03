@@ -50,10 +50,10 @@ const CreonPass = () => {
                                 </div>
                             </div>
                             <button
-                                className='btn mt-[5px] w-full md:max-w-max rounded-[6px] overflow-hidden gradient-bg h-[57px] px-[30px] py-[16px] font-bold text-[16px] text-white leading-[110%]'>
-                                <p className='btn-child duration-[250ms] ease-out text-center h-[57px]'>Buy
+                                className='btn mt-[5px] w-full md:max-w-max rounded-[6px] overflow-hidden gradient-bg h-[57px] px-[58px] py-[22px] font-bold text-[16px] text-white leading-[110%]'>
+                                <p className='btn-child-1 duration-200 ease-in text-center'>Buy
                                     Creon Pass</p>
-                                <p className='btn-child-2 duration-[250ms] ease-out text-center h-[57px]'>Buy
+                                <p className='btn-child-2 duration-200 ease-in text-center translate-y-[100%]'>Buy
                                     Creon Pass</p>
                             </button>
                         </div>
