@@ -13,9 +13,9 @@ const AccordionPanel = ({
         }}
              className={`${index === 1 ? '' : 'pt-[20px]'} relative pb-[20px] border-b border-[#13171D] cursor-pointer`}>
             <div className='flex gap-[20px] items-center'>
-                {data.icon(panel, index)}
+                <div className='w-[70px] lg:w-[110px]'>{data.icon(panel, index)}</div>
                 <div className='flex flex-1 justify-between items-start'>
-                    <p className={`font-bold text-[18px] max-w-[196px] md:max-w-[323px] text-white font-satoshi text-[18px] leading-[130%]  ${panel === index ? '' : 'hover:text-[#3D8BFF] duration-200 delay-50 ease-linear'}`}>{data.q}</p>
+                    <p className={`font-bold text-[20px] max-w-[196px] sm:max-w-[323px] text-white font-satoshi md:text-[20px] lg:text-[22px] leading-[130%]  ${panel === index ? '' : 'hover:text-[#3D8BFF] duration-200 delay-50 ease-linear'}`}>{data.q}</p>
                     <Image
                         className={`${panel === index ? '' : 'flex-shrink-0 flip-horizontal duration-300'} leading-[130%] duration-300 cursor-pointer right-[24px]`}
                         src='/caret.svg'
@@ -37,7 +37,7 @@ const AccordionPanel = ({
                             opacity: panel === index ? 1 : 0,
                         }}
             >
-                <p className={`${panel === index ? 'block' : 'h-0'} ml-[93px] font-satoshi w-full text-[16px] text-white leading-[130%] pb-[30px] max-w-[252px] md:max-w-[379px]`}>
+                <p className={`${panel === index ? 'block' : 'h-0'} ml-[93px] lg:ml-[130px] font-satoshi w-full text-[16px] text-white leading-[130%] pb-[30px] max-w-[252px] md:max-w-[379px]`}>
                     {data.a}
                 </p>
             </motion.div>

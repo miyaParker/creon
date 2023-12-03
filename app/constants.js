@@ -2,7 +2,7 @@ export const faqs = [
     {
         q: 'Profitability and Growth',
         a: 'At Creon, we handpick cutting-edge AI projects and offer our community and token holders early access and investment opportunities. Our community actively contributes to the growth and profitability of these projects, creating a dynamic ecosystem of innovation and shared success.',
-        icon: (panel, index) => <svg width="100" height="114" viewBox="0 0 100 114" fill="none"
+        icon: (panel, index) => <svg className='w-full h-auto object-cover' width="100" height="114" viewBox="0 0 100 114" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2412_68)">
                 <path
@@ -34,7 +34,7 @@ export const faqs = [
     {
         q: 'Transparent & Fair Decentralized Earnings',
         a: 'At Creon, we handpick cutting-edge AI projects and offer our community and token holders early access and investment opportunities. Our community actively contributes to the growth and profitability of these projects, creating a dynamic ecosystem of innovation and shared success.',
-        icon: (panel, index) => <svg width="100" height="114" viewBox="0 0 100 114" fill="none"
+        icon: (panel, index) => <svg className='w-full h-auto object-cover' width="100" height="114" viewBox="0 0 100 114" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2412_182)">
                 <path
@@ -79,7 +79,7 @@ export const faqs = [
     {
         q: 'Early Engagement in Tokenized AI Projects',
         a: 'At Creon, we handpick cutting-edge AI projects and offer our community and token holders early access and investment opportunities. Our community actively contributes to the growth and profitability of these projects, creating a dynamic ecosystem of innovation and shared success.',
-        icon: (panel, index) => <svg width="100" height="114" viewBox="0 0 100 114" fill="none"
+        icon: (panel, index) => <svg className='w-full h-auto object-cover' width="100" height="114" viewBox="0 0 100 114" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2412_125)">
                 <path
@@ -114,7 +114,7 @@ export const faqs = [
     {
         q: 'Limitless Possibilities of AI & Crypto',
         a: 'At Creon, we handpick cutting-edge AI projects and offer our community and token holders early access and investment opportunities. Our community actively contributes to the growth and profitability of these projects, creating a dynamic ecosystem of innovation and shared success.',
-        icon: (panel, index) => <svg width="100" height="114" viewBox="0 0 100 114" fill="none"
+        icon: (panel, index) => <svg className='w-full h-auto object-cover' width="100" height="114" viewBox="0 0 100 114" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2412_141)">
                 <path
