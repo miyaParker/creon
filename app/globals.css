@@ -18,7 +18,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #AB23FF;
 }
-
 .overlay {
     background: linear-gradient(175deg, #AB23FF 4.29%, #3D8BFF 47.39%, #000000 95.05%);
     mix-blend-mode: soft-light;
@@ -34,16 +33,15 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
 }
-
-.ellipse {
+.ellipse{
     z-index: 50;
     position: absolute;
     border-radius: 1106px;
     background: #000;
-    filter: blur(8px);
+    filter: blur(18px);
     width: 100%;
     height: 65px;
-    transform: translate(0, -50%);
+    transform: translate(0,-66%);
 }
 
 
@@ -53,11 +51,9 @@ body::-webkit-scrollbar-thumb {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.gradient-bg {
+.gradient-bg{
     background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
 }
-
 .gradient-border {
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -69,13 +65,11 @@ body::-webkit-scrollbar-thumb {
     transform: scaleY(-1);
     transition: transform 300ms ease-out;
 }
-
-.bg-blur {
+.bg-blur{
     background: rgba(13, 19, 28, 0.70);
     backdrop-filter: blur(5px);
 }
-
-.black-gradient {
+.black-gradient{
     position: absolute;
     top: 0;
     left: 0;
@@ -83,8 +77,7 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
 }
-
-.bg-gradient {
+.bg-gradient{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -93,25 +86,23 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(175deg, #3D8BFF 4.29%, #AB23FF 95.71%);
     mix-blend-mode: soft-light;
 }
-
-.card-container:hover img {
+.card-container:hover img{
     transform: scale(1.2);
     transition: transform 200ms ease-in 10ms;
 }
-
-.btn:hover .btn-child {
+.btn:hover .btn-child{
     transform: translateY(-100%);
 }
-
-.btn:hover .btn-child-2 {
+.btn:hover .btn-child-2{
     transform: translateY(-100%);
 }
-
-.btn:hover {
+.btn:hover{
     background: #3D8BFF;
 }
-
-.screen-h {
+.screen-h{
     height: 100dvh;
 }
-
+.menu-icon:hover .dash{
+    background-color: #FFF;
+    transition: background-color 100ms ease-in;
+}
