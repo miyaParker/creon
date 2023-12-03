@@ -5,7 +5,6 @@ import {motion} from "framer-motion";
 const AccordionPanel = ({
                             data, index, panel, setPanel
                         }) => {
-    console.log(panel, index)
     return (
         <div onClick={() => {
             if (panel === index) {
@@ -13,16 +12,19 @@ const AccordionPanel = ({
             } else setPanel(index)
         }}
              className={`${index === 1 ? '' : 'pt-[20px]'} relative pb-[20px] border-b border-[#13171D] cursor-pointer`}>
-            <div className='flex items-center gap-[20px]'>
+            <div className='flex gap-[20px] items-center'>
                 {data.icon(panel, index)}
-                <p className={`font-bold text-[18px] max-w-[323px] text-white font-satoshi text-[18px]leading-[130%]  ${panel === index ? '' : 'hover:text-[#3D8BFF] duration-200 delay-50 ease-linear'}`}>{data.q}</p>
+                <div className='flex flex-1 justify-between items-start'>
+                    <p className={`font-bold text-[18px] max-w-[196px] md:max-w-[323px] text-white font-satoshi text-[18px] leading-[130%]  ${panel === index ? '' : 'hover:text-[#3D8BFF] duration-200 delay-50 ease-linear'}`}>{data.q}</p>
+                    <Image
+                        className={`${panel === index ? '' : 'flex-shrink-0 flip-horizontal duration-300'} leading-[130%] duration-300 cursor-pointer right-[24px]`}
+                        src='/caret.svg'
+                        alt='read more' width={14}
+                        height={14}/>
+                </div>
             </div>
-            <Image
-                className={`${panel === index ? '' : 'flip-horizontal duration-300'}  duration-300 cursor-pointer absolute top-[24px] right-[24px]`}
-                src='/caret.svg'
-                alt='read more' width={14}
-                height={14}/>
-            <motion.div transition={{type: 'tween', duration: 0.25, ease:'easeOut'}}
+
+            <motion.div transition={{type: 'tween', duration: 0.25, ease: 'easeOut'}}
                         initial={{
                             height: '0',
                             opacity: 0,
