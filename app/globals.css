@@ -107,5 +107,4 @@ body::-webkit-scrollbar-thumb {
 }
 .menu-icon:hover .dash{
     background-color: #FFF;
-    transition: background-color 100ms ease-in;
 }
