@@ -9,7 +9,7 @@ const Hero = () => {
                 <div className='absolute bottom-[60px] text-white '>
                     <p className='w-full max-w-[345px] md:max-w-[465px] xl:max-w-[1200px] 2xl:max-w-[1400px] font-monument text-[32px] md:text-[44px] xl:text-[54px] 2xl:text-[68px] uppercase leading-[110%] mb-[20px]'>Empowering
                         AI-Crypto Innovations and Integrating AI Tools into crypto.</p>
-                    <p className='gradient-border w-full py-[10px] lg:py-[12px] md:max-w-[345px] lg:max-w-max md:max-w-[453px] gradient-text font-satoshi font-bold text-[18px] leading-[130%]'>Creon
+                    <p className='gradient-border w-full py-[10px] lg:py-[12px] md:max-w-[345px] lg:max-w-max gradient-text font-satoshi font-bold text-[18px] leading-[130%]'>Creon
                         «Create On» confidential AI Tools for granting access through NFTs.</p>
                 </div>
             </div>
